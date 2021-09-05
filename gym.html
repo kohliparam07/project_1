@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xtreme Fitness</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400&family=Pacifico&display=swap" rel="stylesheet">
+    <style>
+        *
+        {
+            box-sizing: border-box;
+        }
+        .logo
+        {
+            display: inline-block;  
+            position: absolute;
+            left: 23px;
+            top: 0px;
+            color: white;
+            font-size: 35px;
+        }
+        .nav
+        {
+            display: block;
+            width: 42%;
+            margin: 5px auto;
+            border: 1px solid white;
+            border-radius: 29px;
+        }
+        .btn
+        {
+            display: inline-block;
+            position: absolute;
+            right: 23px;
+            top: 11px;
+            font-family: 'Pacifico', cursive;
+        }
+        .logo img
+        {
+            width: 120px;
+            filter: invert(100%);
+        }
+        .logo
+        {
+            font-family: 'Pacifico', cursive;
+            line-height: 40px;
+        }
+        .navbar li
+        {
+            display: inline-block;
+            margin: 10px;
+            margin-top: 0px;
+            margin-left: 2px;
+            margin-bottom: 0px;
+            font-family: 'Kanit', sans-serif;
+
+        }
+        .navbar li a
+        {
+            color: white;
+            text-decoration: none;
+            
+        }
+        .navbar li a:hover
+        {
+            color: black;
+            background-color: white;
+            border-radius: 30px;
+            padding: 3px;
+        }
+        .btn a
+        {
+            text-decoration: none;
+            color: black;
+        }
+        .btn a:hover
+        {
+            color: white;
+        }
+        .right:hover
+        {
+            color: white;
+            background-color: black;
+            cursor: pointer;
+        }
+        .forms
+        {
+            display: block;
+            margin: 210px 46px;
+            padding: 10px 10px;
+            width: 464px;
+            /* border: 2px solid white; */
+        }
+        .forms h1
+        {
+            color: white;
+            text-align: center;
+            font-size: 44px;
+            font-family: 'Kanit', sans-serif;
+        }
+        .forms input
+        {
+            /* background-color: transparent; */
+            font-family: 'Kanit', sans-serif;
+            color: black;
+            margin: 5px 79px;
+            padding: 3px 58px;
+        }
+        ::placeholder
+        {
+            color: black;
+            text-align: center;
+        }
+        .submit input
+        {
+            color: white;
+            background-color: transparent;
+            margin: 19px 84px;
+            padding: 3px 2px;
+            border: 2px solid white;
+            cursor: pointer;
+        }
+        .tm input
+        {
+            color: black;
+            font-family: 'Kanit', sans-serif;
+            width: 196px;
+            padding: 2px 39px;
+            margin-left: 16px;
+            margin-right: 1px;
+        }
+        .tm
+        {
+            color: white;
+            padding: 1px 58px;
+            margin: 5px 22px;
+            width: 421px;
+            font-family: 'Kanit', sans-serif;
+        }
+        .ag
+        {
+            color: white;
+            font-family: 'Kanit', sans-serif;
+        }
+        .num
+        {
+            color: white;
+            width: 33px;
+            padding: 2px 1px;
+            margin: 2px 80px;
+            width: 364px;
+            font-family: 'Kanit', sans-serif;
+        }
+        .num input
+        {
+            color: black;
+            width: 46px;
+            padding: 2px 97px;
+            margin-left: 28px;
+            font-family: 'Kanit', sans-serif;
+        }
+        .gen
+        {
+            color: white;
+            font-family: 'Kanit', sans-serif;
+            padding: 0px 8px;
+            margin: 5px 72px;
+            width: 430px;
+        }
+        .gen input
+        {
+            padding: 1px 8px;
+            margin: 5px 16px;
+            width: 208px;
+        }
+        #male
+        {
+            padding: 1px 8px;
+            margin: 5px 34px;
+        }
+        .media img
+        {
+            width: 50px;
+            margin-right: 0px;
+            margin-left: 1116px;
+            margin-bottom: 4px;
+            margin-top: 0px;
+            border-radius: 10px;
+            padding: 0px 3px 3px 2px;
+        }
+        .menu 
+        {
+            width: 58px;
+            padding: 6px 2px;
+            position: absolute;
+            top: 207%;
+            left: -8px;
+            opacity: 0;
+            visibility: hidden;
+            border: 1px solid white;
+            transition: 0.4s;
+            height: 96px;
+            line-height: 30px;
+            text-align: center;
+        }
+
+        .menu a 
+        {
+            color: white;
+            text-decoration: none;
+        }
+
+        .hm:hover .menu 
+        {
+            opacity: 1;
+            visibility: visible;
+
+        }
+        .menu:hover
+        {
+            
+            opacity: 1;
+            visibility: visible;
+        }
+        .hm 
+        {
+            position: relative;
+        }
+
+    </style>
+</head>
+<body>
+    <style>
+        body
+        {
+            margin: 0px;
+            padding: 0px;
+            background: url('bag.jpg');
+            backdrop-filter: blur(4px);
+            background-size: 1266px;
+            height: 840px;
+            width: 1266px;
+            background-repeat: no-repeat;
+            
+        }
+    </style>
+    <header>
+        <div class="head">
+            <div class="logo">
+                <img src="logo.jpg" alt="">
+                <br>Xtreme<br>Fitness
+            </div>
+            <div class="nav">
+                <ul class="navbar">
+                    <li class="hm">
+                        <div class="menu">
+                            <a href="#">Link 1</a>
+                            <a href="#">Link 2</a>
+                            <a href="#">Link 3</a>
+                        </div>
+                        <a href="#">Home</a>
+                    </li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Fitness Calculator</a></li>
+                    <li><a href="#">Diet Chats</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="btn">
+                <button class="right">Call Us</button>
+                <button class="right" id="email"><a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=new"target="_blank">Email Us</a></button>
+            </div>
+        </div>
+    </header>
+    <div class="forms">
+        <h1>JOIN OUR FAMILY NOW</h1>
+        <form action="backend.php">
+            <div class="cont">
+                <input type="text" name="" id="" placeholder="Enter your name">
+            </div>
+            <div class="cont">
+                <input type="text" name="" id="" placeholder="Enter your email">
+            </div>
+            <div class="num">
+                Mobile: <input type="tel" name="" id="">
+            </div>
+            
+            <div class="gen">
+                GENDER: <br>Male<input type="radio" name="" id="male"> <br>Female<input type="radio" name="" id="female">
+            </div>
+            <div class="tm">
+                Time slot:<input type="time" name="" id="" placeholder="Time slot">
+            </div>
+            <div class="submit">
+                <input type="submit" value="SUBMIT">
+                <input type="reset" value="RESET">
+            </div>
+            <div class="media">
+                <a href="https://www.instagram.com/param.singh.7/" target="_blank"><img src="inslog.png"  alt=""></a>
+                <a href="https://www.facebook.com/parambir.singh.146069/" target="_blank"><img src="fb.png" alt=""></a>
+            </div>
+        </form>
+        
+    </div>
+        
+</body>
+</html>
